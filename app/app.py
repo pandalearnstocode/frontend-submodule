@@ -8,7 +8,7 @@ if spectra is not None:
     spectra_df = pd.read_csv(spectra)
     st.write(spectra_df)
 
-pressed = st.button('Get Short Link')
+pressed = st.button('Calculate summary statistics')
 if pressed:
     if spectra is not None:
         data = spectra_df.to_dict(orient='list')
